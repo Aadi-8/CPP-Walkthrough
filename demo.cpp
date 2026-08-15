@@ -56,6 +56,9 @@ int main() {
             cout << "Thursday";
              break;
         }
+        default:{
+            cout << "Invalid Count";
+        }
     }
 
     return 0;
