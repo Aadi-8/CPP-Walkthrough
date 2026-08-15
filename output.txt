@@ -1,0 +1,8 @@
+value is:2 and other is :3
+a is 78
+b is 400
+c is 30000
+float d is 3.6
+double e is 3.99471
+I'm aadi
+hi there this side Aadi@
