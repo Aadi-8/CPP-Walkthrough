@@ -25,5 +25,14 @@ int main() {
 
     char ee='@';                   // to store single character 
     cout << ee;
+
+    int age;
+    cin >> age;
+    if (age>=18){
+        cout << "\nYou are an adult";
+    }
+    else if(age<18){
+        cout << "\nYou are not an adult";
+    }
     return 0;
 }
