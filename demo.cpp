@@ -29,10 +29,35 @@ int main() {
     int age;
     cin >> age;
     if (age>=18){
-        cout << "\nYou are an adult";
+        cout << "\nYou are an adult\n";
     }
     else if(age<18){
-        cout << "\nYou are not an adult";
+        cout << "\nYou are not an adult\n";
     }
+
+//switch case 
+    int day;
+    cin >> day;
+    switch(day){
+        
+        case 1:{
+            cout << "Monday";
+            break;                  //If we not break it executes every case after it
+        }
+        case 2:{
+            cout << "Tuesday";
+             break;
+        }
+        case 3:{
+            cout << "Wednesday";
+             break;
+        }
+        case 4:{
+            cout << "Thursday";
+             break;
+        }
+    }
+
     return 0;
 }
+
