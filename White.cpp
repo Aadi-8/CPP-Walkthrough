@@ -1,6 +1,24 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+void whoami(){
+    cout << "Hi I'm Aadi" << endl;   //non parameterised func
+}
+void welcome(string name){
+    cout << "welcome " << name << endl;   //parameterised func
+}
+int sum(int num1 , int num2 ){
+    int num3 = num1+num2 ;
+    return num3;
+}
+void value(int num4){
+    num4 += 10;
+    cout << num4 <<endl;
+}
+void reference(int &num4){
+    num4 += 10;
+    cout << num4 <<endl;
+}
 //Array
 int main(){
     int arr[5];          /*we have created array with five boxes having indices 0-4*/
@@ -48,9 +66,29 @@ int main(){
     } while(z<=1);       //if we increase z here it works as while loop
     cout << "Out of the loop" << endl;
 
+/* Functions are set of code which performs something for you
+ Functions are used to modularise code
+ Functions are used to increase readability
+ Functions are used to use same code multiple times
+ void -> which does not returns anything we can define it outside the main
+ return
+ parameterised
+ non parameterised
+*/
+whoami();    //simply calling a void func NON PARAMETERISED
+welcome("aman");
+cout << sum(4,5) <<endl;
 
-
-
-
+//pass by value means it do not change the value only takes a copy and perform the the function
+int num4;
+num4 = 5;
+value(num4);                 //This execute the func with the copy of num4
+cout << num4 <<endl;         //do not change num4 address
+//pass by reference means it changed the original value/strings
+int num5;
+num5 = 8;           
+reference(num5);             //This execute the func with original address of num5
+cout << num5 <<endl;         //This changed the num5 forever 
+//And we can do with strings and array too
     return 0;
 }
