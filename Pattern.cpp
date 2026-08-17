@@ -39,6 +39,15 @@ void p4(int n4){
         cout <<endl;
     }
 }
+void p5(int n5){
+    for (int i=0;i<n5;i++){
+        for (int j=n5;j>i;j=j-1){
+           cout << "* " ;
+
+        }
+        cout <<endl;
+    }
+}
 int main(){
 
     // #ifndef ONLINE_JUDGE                    //redirect c++ to read input 
@@ -57,6 +66,9 @@ int main(){
 
     int n4=5;
     p4(n4);
+
+    int n5=5;
+    p5(n5);
 
     return 0;
 }
