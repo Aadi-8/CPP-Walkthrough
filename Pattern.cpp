@@ -48,9 +48,21 @@ void p5(int n5){
         cout <<endl;
     }
 }
-
+void p6(int n6){
+    for (int i=0;i<n6;i++){
+        for (int j=0;j<n6-i-1;j=j+1){
+            cout << "- ";
+        }
+        for (int j=0;j<2*i+1;j=j+1){
+            cout << "* ";
+        }
+        for (int j=0;j<n6-i-1;j=j+1){     //can use third loop if asked to show line otherwise leave it only with 2 loops
+            cout << "- ";
+        }
+        cout <<endl;
+    }
+}
 int main(){
-
     // #ifndef ONLINE_JUDGE                    //redirect c++ to read input 
     // freopen("int2.txt", "r", stdin);
     // freopen("output.txt", "w", stdout);
@@ -71,5 +83,9 @@ int main(){
     int n5=5;
     p5(n5);
 
+    int n6=4;
+    p6(n6);
+
+    
     return 0;
 }
