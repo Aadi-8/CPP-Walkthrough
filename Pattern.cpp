@@ -42,12 +42,13 @@ void p4(int n4){
 void p5(int n5){
     for (int i=0;i<n5;i++){
         for (int j=n5;j>i;j=j-1){
-           cout << "* " ;
+           cout << "* "<<j ;
 
         }
         cout <<endl;
     }
 }
+
 int main(){
 
     // #ifndef ONLINE_JUDGE                    //redirect c++ to read input 
