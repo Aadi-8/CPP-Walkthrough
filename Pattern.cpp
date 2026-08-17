@@ -12,15 +12,23 @@ void p1(int n1){
     }
 }
 void p2(int n2){
-    for (int c=0;c<n2;c=c+1){
+    for (int c=0;c<n2;c++){
         
-        for (int d=0;d<c+1;d=d+1){
+        for (int d=0;d<c+1;d++){
             cout << "* ";
-           
-                }
+        }
         cout <<endl;
     }
 
+}
+void p3(int n3){
+    for (int e=0;e<n3;e++){
+        for (int f=1; f<=e ; f++){
+           cout << f;
+
+        }
+        cout <<endl;
+    }
 }
 int main(){
 
@@ -34,6 +42,9 @@ int main(){
     
     int n2=5;
     p2(n2);
+
+    int n3=5;
+    p3(n3);
 
     return 0;
 }
