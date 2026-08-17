@@ -11,15 +11,29 @@ void p1(int n1){
         cout <<endl;
     }
 }
+void p2(int n2){
+    for (int c=0;c<n2;c=c+1){
+        
+        for (int d=0;d<c+1;d=d+1){
+            cout << "* ";
+           
+                }
+        cout <<endl;
+    }
+
+}
 int main(){
 
-    #ifndef ONLINE_JUDGE                    //redirect c++ to read input 
-    freopen("int2.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-    #endif
+    // #ifndef ONLINE_JUDGE                    //redirect c++ to read input 
+    // freopen("int2.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
+    // #endif
 
-    int n1;
-    cin >> n1;
+    int n1=4;
     p1(n1);
+    
+    int n2=5;
+    p2(n2);
 
+    return 0;
 }
