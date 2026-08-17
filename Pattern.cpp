@@ -30,6 +30,15 @@ void p3(int n3){
         cout <<endl;
     }
 }
+void p4(int n4){
+    for (int g=0;g<n4;g++){
+        for (int h=1; h<=g ; h++){
+           cout << g;
+
+        }
+        cout <<endl;
+    }
+}
 int main(){
 
     // #ifndef ONLINE_JUDGE                    //redirect c++ to read input 
@@ -45,6 +54,9 @@ int main(){
 
     int n3=5;
     p3(n3);
+
+    int n4=5;
+    p4(n4);
 
     return 0;
 }
