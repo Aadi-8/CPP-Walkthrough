@@ -30,8 +30,8 @@ void p3(int n3){
         cout <<endl;
     }
 }
-void p4(int n4){
-    for (int g=0;g<n4;g++){
+void p4(int n){
+    for (int g=0;g<n;g++){
         for (int h=1; h<=g ; h++){
            cout << g;
 
@@ -39,9 +39,9 @@ void p4(int n4){
         cout <<endl;
     }
 }
-void p5(int n5){
-    for (int i=0;i<n5;i++){
-        for (int j=n5;j>i;j=j-1){
+void p5(int n){
+    for (int i=0;i<n;i++){
+        for (int j=n;j>i;j=j-1){
            cout << "* "<<j ;
 
         }
@@ -51,13 +51,25 @@ void p5(int n5){
 void p6(int n6){
     for (int i=0;i<n6;i++){
         for (int j=0;j<n6-i-1;j=j+1){
-            cout << "- ";
+            cout << "  ";
         }
         for (int j=0;j<2*i+1;j=j+1){
             cout << "* ";
         }
         for (int j=0;j<n6-i-1;j=j+1){     //can use third loop if asked to show line otherwise leave it only with 2 loops
-            cout << "- ";
+            cout << "  ";
+        }
+        cout <<endl;
+    }
+}
+void p7(int n7){
+    for (int i=0;i<n7;i++){
+        for (int k=0;k<i;k++){
+            cout << "  ";
+        }
+        for (int j=0;j<2*n7-(2*i+1);j++){
+           cout << "* " ;
+
         }
         cout <<endl;
     }
@@ -83,9 +95,11 @@ int main(){
     int n5=5;
     p5(n5);
 
-    int n6=4;
+    int n6=5;
     p6(n6);
 
-    
+    int n7=5;
+    p7(n7);
+
     return 0;
 }
