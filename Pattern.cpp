@@ -62,17 +62,33 @@ void p6(int n6){
         cout <<endl;
     }
 }
-void p7(int n7){
-    for (int i=0;i<n7;i++){
+void p7(int n){
+    for (int i=0;i<n;i++){
         for (int k=0;k<i;k++){
             cout << "  ";
         }
-        for (int j=0;j<2*n7-(2*i+1);j++){
+        for (int j=0;j<2*n-(2*i+1);j++){
            cout << "* " ;
 
         }
         cout <<endl;
     }
+}
+void p9(int n9){
+    for (int i=0;i<2*n9-1;i++){
+        if (i<n9) { 
+            for (int j=0;j<=i;j++){
+            cout << "*";
+        }
+    }
+        else{
+            for (int k=1;k<2*n9-i;k++){
+                cout << "*";
+            }
+        }
+        cout << endl;
+    }
+    
 }
 int main(){
     // #ifndef ONLINE_JUDGE                    //redirect c++ to read input 
@@ -100,6 +116,18 @@ int main(){
 
     int n7=5;
     p7(n7);
+
+    int n8=5;
+    p6(n8);
+    p7(n8);
+
+    int n9=5;
+    p9(n9);
+
+    int x;
+    cout << "entre: ";
+    cin >> x;
+    cout << x%10;
 
     return 0;
 }
