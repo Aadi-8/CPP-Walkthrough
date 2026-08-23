@@ -124,20 +124,5 @@ int main(){
     int n9=5;
     p9(n9);
 
-    int x=458;
-    cout << x%10 <<endl;
-                                            //Reverse the no as integer
-    int xx;
-    cout << "entre ";
-    cin >> xx;
-    int ans=0;
-    int len = to_string(xx).size();          //int don't have len func so convert it into string first
-    for (int i=0;i<len;i++){
-   
-        int aa = xx%10;
-        ans = ans*10+aa;
-         xx = xx/10;
-    }
-    cout << ans;
     
 }
