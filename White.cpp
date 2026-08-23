@@ -92,10 +92,37 @@ cout << num5 <<endl;         //This changed the num5 forever
                              //And we can do with strings and array too
 
 //Basic math 
- int number=3445;
+ int num6=3445;
     // cout << "entre: ";
     // cin >> x;
-    cout << number%10;        //This is called modulo which gives remainder
+    cout << num6%10 << endl;        //This is called modulo which gives remainder
 
+                            //Reverse the no as integer
+   int num7;
+cout << "entre:- ";
+cin >> num7;
+int ans = 0;
+while (num7 != 0) {
+    int aa = num7 % 10;
+    ans = ans * 10 + aa;
+    num7 = num7 / 10;
+}
+
+cout << ans << endl;
+
+int nn ;
+cout <<"ent ";
+cin >> nn;
+string ss=to_string(nn);
+int lent = to_string(nn).size();
+for (int i=1;i<lent;i++){
+   if (ss[i]!=ss[lent-(i+1)]){
+    cout << "Not a pallindrome";
+       break;
+    }
+    else{
+       cout <<"ok" <<endl;
+    }
+}
     return 0;
 }
