@@ -50,6 +50,12 @@ bool pallindrome(const string &s ,int i, int n){
     }
     return pallindrome(s,i+1,n-1);
 }
+int fabonaci(int n){
+    if (n<=1){
+        return n;
+    }
+     return fabonaci(n-1)+fabonaci(n-2);
+}
 int main(){
     name(1,4);
     num(1,4);
@@ -70,12 +76,12 @@ int main(){
     //         cout << arr1[k] << " ";
     //     }
     //     cout << endl;
-    string d;
-    cout << "Entre your pallindrome string ";
-    cin >> d;
+    string d="madam";
+    cout << "Entre your pallindrome string " << d<< endl;
   
     int len=d.size();
     int a=0;
     pallindrome(d,a,len-1);
+    cout << fabonaci(4) << endl;
     return 0;
 }
