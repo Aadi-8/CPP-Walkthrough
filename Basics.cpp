@@ -115,8 +115,15 @@ int main(){
     for (int i=0; i<n ;i++){
         hash[arr3[i]] += 1;
     }                                     //we can use loop to ask the inputs
-    cout << "1 appear" << hash[1] <<"times" << endl;
-    cout << "12 appear" << hash[12] <<"times" << endl;
+    cout << "1 appear " << hash[1] <<" times" << endl;
+    cout << "12 appear " << hash[12] <<" times" << endl;
+
+    string h="abdadbhsbhdjssbbhh";
+    int hash1[26]={0};                       // this meth used only when we know there's all small letter
+    for (int i=0;i<h.size();i++){
+        hash1[h[i]-'a']++;
+    }
+    cout << hash1['d'-'a']<< endl;         //we use char indexing
 
     return 0;
 }
