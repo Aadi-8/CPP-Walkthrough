@@ -19,6 +19,18 @@ void reference(int &num4){
     num4 += 10;
     cout << num4 <<endl;
 }
+void pall(int num8){
+string ss=to_string(num8);
+int lent = to_string(num8).size();
+
+for (int i=1;i<lent;i++){
+   if (ss[i]!=ss[lent-(i+1)]){
+    cout << "Not a pallindrome";
+       break;
+    }
+}
+ cout << "It's a pallindrome"<<endl;
+}
 //Array
 int main(){
     int arr[5];              /*we have created array with five boxes having indices 0-4*/
@@ -98,31 +110,54 @@ cout << num5 <<endl;         //This changed the num5 forever
     cout << num6%10 << endl;        //This is called modulo which gives remainder
 
                             //Reverse the no as integer
-   int num7;
-cout << "entre:- ";
-cin >> num7;
+   int num7=42563;
 int ans = 0;
 while (num7 != 0) {
     int aa = num7 % 10;
     ans = ans * 10 + aa;
     num7 = num7 / 10;
 }
-
 cout << ans << endl;
+pall(123321);
 
-int nn ;
-cout <<"ent ";
-cin >> nn;
-string ss=to_string(nn);
-int lent = to_string(nn).size();
-for (int i=1;i<lent;i++){
-   if (ss[i]!=ss[lent-(i+1)]){
-    cout << "Not a pallindrome";
-       break;
-    }
-    else{
-       cout <<"ok" <<endl;
-    }
+//STL
+pair<int,int> p={1,3};
+cout << p.first << " " << p.second << endl;
+pair<pair<int,int>,int> pr={{3,2},5};
+cout << pr.first.first <<","<< pr.first.second << " "<< pr.second <<endl;
+
+//VECTOR
+vector<int> v;
+vector<pair<int,int>> v1;
+vector<int> v2(3,100);
+
+v.push_back(1);
+v.push_back(6);
+v.push_back(4);
+v.push_back(3);
+v.emplace_back(2);
+v1.push_back({3,4});
+v1.emplace_back(5,6);
+cout << v[2] << " "<< v[4] << endl;
+cout << v.back()<< endl;
+vector<int>::iterator it=v.begin();
+cout << *(it) << endl;                  //Itrator work like pointer 
+it=it+2;                                //here we increase the pointer position 
+cout << *(it) << endl;
+
+//Ways to print a vector
+for(vector<int>::iterator it=v.begin();it != v.end() ; it++){
+    cout << *(it) << " " ;
 }
+cout << endl;
+for (auto it=v.begin();it != v.end() ; it++){
+    cout << *(it) << " " ;
+}
+cout << endl;
+for (auto it:v){
+    cout << it << " " ;
+}
+cout << endl;
+
     return 0;
 }
